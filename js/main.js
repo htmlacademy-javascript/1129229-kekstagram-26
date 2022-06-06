@@ -1,11 +1,11 @@
 function randomNumber (min, max) {
   if (min <= max) {
     const random = Math.random() * (max - min) + min;
-    return Math.floor(random)
+    return Math.floor(random);
   }
-  console.log('Так нельзя))')
+  return false;
 }
-console.log(randomNumber(1,10))
+randomNumber(1,10);
 
 
 function stringLength (line, length) {
@@ -15,4 +15,4 @@ function stringLength (line, length) {
   return true;
 }
 
-console.log(stringLength('Привет', 1));
+stringLength('Привет', 1);
